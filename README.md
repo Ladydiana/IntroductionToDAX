@@ -160,4 +160,4 @@ NumOfProducts = COUNTROWS ( RELATEDTABLE ( Product ) )
 - Needed to evaluate column values, it is the concept of "current row"
 
 
-**The Filter Context filters tables. The Row Context Iterates rows.**
+**! The Filter Context filters tables. The Row Context Iterates rows.!**
