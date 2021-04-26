@@ -158,3 +158,6 @@ NumOfProducts = COUNTROWS ( RELATEDTABLE ( Product ) )
     - All «X» functions and iterators
     - Defined by the user formulas
 - Needed to evaluate column values, it is the concept of "current row"
+
+
+**The Filter Context filters tables. The Row Context Iterates rows.**
