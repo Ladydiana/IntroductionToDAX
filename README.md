@@ -115,7 +115,10 @@ RELATEDTABLE
 - They can be combined together to form complex expressions
 
 ### FILTER
-- Adds a new condition
-- Restricts the number of rows of a table
-- Returns a table
-- Can be iterated by an «X» function
+- Adds a new condition by restricts the number of rows of a table
+- Returns a table that can be iterated by an «X» function
+
+### ALL
+- Returns all the rows of a table while ignoring the filter context
+- Returns a table that can be iterated by an «X» function
+- Can be also used with a single column ```ALL ( Customers[CustomerName] )```the result being a table with one column
