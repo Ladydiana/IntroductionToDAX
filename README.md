@@ -122,3 +122,12 @@ RELATEDTABLE
 - Returns all the rows of a table while ignoring the filter context
 - Returns a table that can be iterated by an «X» function
 - Can be also used with a single column ```ALL ( Customers[CustomerName] )```the result being a table with one column
+
+### DISTINCT
+- Returns the distinct values of a column, only the ones visible in the current context
+```
+NumOfProducts =
+COUNTROWS (
+DISTINCT ( Product[ProductCode] )
+)
+```
