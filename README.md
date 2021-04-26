@@ -21,3 +21,13 @@ DAX is a functional language, the execution flows with function calls.
 **!** Code formatting is important in DAX, as it makes code debugging easy.
 For automatically formatting DAX code one can use [daxformatter](www.daxformatter.com).
 
+## Calculated Columns
+- Columns computed using DAX.
+- Always computed for the current row.
+
+## Measures
+- Written using DAX
+- Do not work row by row
+- Instead, use tables and aggregators
+- Do not have the «current row» concept
+
