@@ -113,3 +113,9 @@ RELATEDTABLE
 ```
 - Their result is often used in other functions
 - They can be combined together to form complex expressions
+
+### FILTER
+- Adds a new condition
+- Restricts the number of rows of a table
+- Returns a table
+- Can be iterated by an «X» function
