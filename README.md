@@ -31,3 +31,11 @@ For automatically formatting DAX code one can use [daxformatter](www.daxformatte
 - Instead, use tables and aggregators
 - Do not have the «current row» concept
 
+## Naming Conventions
+- Measures do not belong to a table => Avoid table name in referencing measures
+
+This way it is easier to move to another table and identify as a measure.
+- So:
+  - Calculated columns -> Table[Column]
+  - Measures -> [Measure]
+
