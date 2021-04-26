@@ -47,3 +47,27 @@ This way it is easier to move to another table and identify as a measure.
 - Space and CPU usage: 
   - Columns consume memory
   - Measures consume CPU
+  
+## Aggregation Functions
+- Work only on numeric columns.
+- Aggregate only one column.
+```
+ SUM
+ AVERAGE
+ MIN
+ MAX
+```
+
+## The «X» Aggregation Functions
+- Iterators: useful to aggregate formulas
+```
+ SUMX
+ AVERAGEX
+ MINX
+ MAXX
+```
+- Iterate over the table and evaluate the expression for
+each row
+- Always receive two parameters:
+  1. Table to iterate
+  2. Formula to evaluate for each row
