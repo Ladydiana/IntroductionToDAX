@@ -146,3 +146,13 @@ NumOfProducts = COUNTROWS ( RELATEDTABLE ( Product ) )
   - Slicers Selection
 - Rows outside of the filter context are not considered for the computation
 - Defined automatically by PivotTable, can be created with specific functions too
+
+## Row Context
+- Defined by:
+  - Calculated column definition
+    - Defined automatically for each row
+  - Row Iteration functions
+    - SUMX, AVERAGEX …
+    - All «X» functions and iterators
+    - Defined by the user formulas
+- Needed to evaluate column values, it is the concept of "current row"
