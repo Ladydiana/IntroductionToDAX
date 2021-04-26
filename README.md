@@ -19,5 +19,5 @@ DAX is a functional language, the execution flows with function calls.
 - Designed for data models and business calculations
 
 **!** Code formatting is important in DAX, as it makes code debugging easy.
-For automatically formatting DAX code one can use [daxformatter] (www.daxformatter.com).
+For automatically formatting DAX code one can use [daxformatter](www.daxformatter.com).
 
