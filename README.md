@@ -32,10 +32,18 @@ For automatically formatting DAX code one can use [daxformatter](www.daxformatte
 - Do not have the «current row» concept
 
 ## Naming Conventions
-- Measures do not belong to a table => Avoid table name in referencing measures
-
+- Measures do not belong to a table => Avoid table name in referencing measures. 
 This way it is easier to move to another table and identify as a measure.
 - So:
   - Calculated columns -> Table[Column]
   - Measures -> [Measure]
 
+## Measures vs Calculated Columns
+- Use a column when: 
+  - Needing to slice or filter on the value
+- Use a measure when:
+  - Calculating percentages or ratios
+  - Needing complex aggregations
+- Space and CPU usage: 
+  - Columns consume memory
+  - Measures consume CPU
