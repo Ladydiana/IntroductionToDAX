@@ -137,3 +137,12 @@ DISTINCT ( Product[ProductCode] )
 ```
 NumOfProducts = COUNTROWS ( RELATEDTABLE ( Product ) )
 ```
+
+## Filter Context
+- Defined by:
+  - Row Selection
+  - Column Selection
+  - Report Filters
+  - Slicers Selection
+- Rows outside of the filter context are not considered for the computation
+- Defined automatically by PivotTable, can be created with specific functions too
