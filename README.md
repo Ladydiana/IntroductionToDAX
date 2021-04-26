@@ -79,11 +79,25 @@ SUMX (
 )
 ```
 
+## Using Variables
+- Very useful to avoid repeating subexpressions in your code.
+- Example: 
+```
+Quantity = 
+VAR TotalQuantity = SUM ( Sales[Quantity] )
+RETURN
+	IF (
+		TotalQuantity > 1000,
+		TotalQuantity * 0.95,
+		TotalQuantity * 1.25
+	)
+```
+
 ## Date Functions
 ```
-	DATE, DATEVALUE, DAY, EDATE,
-	EOMONTH, HOUR, MINUTE,
-	MONTH, NOW, SECOND, TIME,
-	TIMEVALUE, TODAY, WEEKDAY,
-	WEEKNUM, YEAR, YEARFRAC
+DATE, DATEVALUE, DAY, EDATE,
+EOMONTH, HOUR, MINUTE,
+MONTH, NOW, SECOND, TIME,
+TIMEVALUE, TODAY, WEEKDAY,
+WEEKNUM, YEAR, YEARFRAC
 ```
