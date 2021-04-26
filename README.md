@@ -74,7 +74,7 @@ each row
 - Example:
 ```
 SUMX (
-Sales,
-Sales[Price] * Sales[Quantity]
+	Sales,
+	Sales[Price] * Sales[Quantity]
 )
 ```
