@@ -101,3 +101,15 @@ MONTH, NOW, SECOND, TIME,
 TIMEVALUE, TODAY, WEEKDAY,
 WEEKNUM, YEAR, YEARFRAC
 ```
+
+## Table Functions
+- Basic functions that work on full tables and return a table as a result
+```
+FILTER
+ALL
+VALUES
+DISTINCT
+RELATEDTABLE
+```
+- Their result is often used in other functions
+- They can be combined together to form complex expressions
