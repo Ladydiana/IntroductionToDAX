@@ -140,7 +140,7 @@ NumOfProducts = COUNTROWS ( RELATEDTABLE ( Product ) )
 
 ## Evaluation Contexts
 
-## 1. Filter Context
+### 1. Filter Context
 - Defined by:
   - Row Selection
   - Column Selection
@@ -149,7 +149,7 @@ NumOfProducts = COUNTROWS ( RELATEDTABLE ( Product ) )
 - Rows outside of the filter context are not considered for the computation
 - Defined automatically by PivotTable, can be created with specific functions too
 
-## 2. Row Context
+### 2. Row Context
 - Defined by:
   - Calculated column definition
     - Defined automatically for each row
