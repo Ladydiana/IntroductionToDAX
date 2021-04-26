@@ -71,3 +71,10 @@ each row
 - Always receive two parameters:
   1. Table to iterate
   2. Formula to evaluate for each row
+- Example:
+```
+SUMX (
+Sales,
+Sales[Price] * Sales[Quantity]
+)
+```
