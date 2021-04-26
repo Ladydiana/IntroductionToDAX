@@ -131,3 +131,9 @@ COUNTROWS (
 DISTINCT ( Product[ProductCode] )
 )
 ```
+
+### RELATEDTABLE
+- Returns a table with all the rows related with the current one.
+```
+NumOfProducts = COUNTROWS ( RELATEDTABLE ( Product ) )
+```
