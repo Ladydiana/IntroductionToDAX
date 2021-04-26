@@ -78,3 +78,12 @@ SUMX (
 	Sales[Price] * Sales[Quantity]
 )
 ```
+
+## Date Functions
+```
+- DATE, DATEVALUE, DAY, EDATE,
+- EOMONTH, HOUR, MINUTE,
+- MONTH, NOW, SECOND, TIME,
+- TIMEVALUE, TODAY, WEEKDAY,
+- WEEKNUM, YEAR, YEARFRAC
+```
