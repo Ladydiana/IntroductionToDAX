@@ -179,6 +179,7 @@ CALCULATE (
 )
 ```
 - Examples:
+
 **1. Filter and SUM are on the same table. You can obtain the same result using FILTER.**
 ```
 NumOfBigSales =
@@ -187,6 +188,7 @@ NumOfBigSales =
 			Sales[SalesAmount] > 100
 	)
 ```
+
 **2.Clear filter on one column only. ALL used with a single column table.**
 ```
 CALCULATE (
