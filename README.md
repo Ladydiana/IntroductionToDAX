@@ -161,3 +161,20 @@ NumOfProducts = COUNTROWS ( RELATEDTABLE ( Product ) )
 
 
 **! The Filter Context filters tables. The Row Context Iterates rows !**
+
+## CALCULATE 
+- Partially replaces the filter context
+- Conditions
+  - Can replace a whole table
+  - Can replace a single column
+- CALCULATE works on the filter context
+- Filters are evaluated in the outer filter context, then combined together in AND and finally used to build a new filter context into which DAX evaluates the expression.
+
+```
+CALCULATE (
+	Expression,
+	Filter1,
+	…
+	Filtern
+)
+```
