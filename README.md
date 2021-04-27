@@ -169,12 +169,31 @@ NumOfProducts = COUNTROWS ( RELATEDTABLE ( Product ) )
   - Can replace a single column
 - CALCULATE works on the filter context
 - Filters are evaluated in the outer filter context, then combined together in AND and finally used to build a new filter context into which DAX evaluates the expression.
-
+- Synthax:
 ```
 CALCULATE (
 	Expression,
 	Filter1,
 	…
 	Filtern
+)
+```
+- Examples:
+**1. Filter and SUM are on the same table. You can obtain the same result using FILTER.**
+```
+NumOfBigSales =
+	CALCULATE (
+			SUM ( Sales[SalesAmount] ),
+			Sales[SalesAmount] > 100
+	)
+```
+**2.Clear filter on one column only. ALL used with a single column table.**
+```
+CALCULATE (
+	SUMX (
+		Orders,
+		Orders[Amount]
+	),
+	ALL ( Orders[Channel] )
 )
 ```
