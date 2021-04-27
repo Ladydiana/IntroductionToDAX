@@ -199,3 +199,27 @@ CALCULATE (
 	ALL ( Orders[Channel] )
 )
 ```
+
+##Filters and Relationships
+-Relationships affect filter context
+
+###RELATED
+
+```RELATED ( table[column] )```
+- Opens a new row context on the target table
+- Following relationships
+- Enables Many side to One Side filtering
+
+###RELATEDTABLE
+```RELATEDTABLE ( table )```
+- Filters the parameter table
+- Returns only rows related with the current one
+- It is the companion of RELATED
+
+##Context Transition
+- CALCULATE performs another task:
+  - If executed inside a row context 
+    1. It takes the row context 
+	2. Transforms it into an equivalent filter context
+    3. Applies it to the data model Before computing its expression
+- Example: ```SUM()``` vs ```CALCULATE(SUM())```
