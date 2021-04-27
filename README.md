@@ -225,9 +225,9 @@ CALCULATE (
 - Example: ```SUM()``` vs ```CALCULATE(SUM())```
 
 ## Time Intelligence
-** - Time intelligence needs a date table **
+- ** Time intelligence needs a date table **
 - Date table properties: 
-  ** - All dates should be present **
+  - ** All dates should be present **
   - From 1° of January, to 31° of December
   - No holes
   - Otherwise time intelligence will not work
@@ -285,7 +285,7 @@ Sales_SPLY =
 ```
 
 ### Running Total
-** - Running total requires an explicit filter. **
+- ** Running total requires an explicit filter. **
 ```
 SalesAmountRT =
 CALCULATE (
