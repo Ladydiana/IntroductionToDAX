@@ -225,12 +225,24 @@ CALCULATE (
 - Example: ```SUM()``` vs ```CALCULATE(SUM())```
 
 ## Time Intelligence
-- Time intelligence needs a date table
+** - Time intelligence needs a date table **
 - Date table properties: 
-  - All dates should be present
+  ** - All dates should be present **
   - From 1° of January, to 31° of December
   - No holes
   - Otherwise time intelligence will not work
+- Time Intelligence covers:
+  - Year To Date
+  - Quarter To Date
+  - Running Total
+  - Same period previous year
+  - Working days computation
+  - Fiscal Year
+  - etc.
+- Aggregations:
+  - YTD: Year To Date
+  - QTD: Quarter To Date
+  - MTD: Month To Date
   
 ### CALENDAR 
 - Returns a table with a single column named "Date", containing a contiguous set of dates in the given range, inclusive.
@@ -244,3 +256,40 @@ CALENDAR (
 ### CALENDARAUTO 
 - Automatically creates a calendar table based on the database content. Optionally you can specify the last month (useful for fiscal years)
 - CALENDARAUTO uses all the dates in the model, excluding only calculated columns and tables
+
+### Year To Date 
+``` DATESYTD ``` and ``` TOTALYTD ```
+```
+SalesAmountYTD =
+CALCULATE (
+	SUM ( Sales[SalesAmount] ),
+	DATESYTD ( 'Date'[Date] )
+)
+```
+```
+SalesAmountYTD :=
+	TOTALYTD (
+	SUM ( Sales[SalesAmount] ),
+	'Date'[Date],
+	"06-30"
+)
+```
+
+### Same Period Last Year
+```
+Sales_SPLY =
+	CALCULATE (
+		SUM ( Sales[SalesAmount] ),
+		SAMEPERIODLASTYEAR ( 'Date'[Date] )
+)
+```
+
+### Running Total
+** - Running total requires an explicit filter. **
+```
+SalesAmountRT =
+CALCULATE (
+    SUM ( Sales[SalesAmount] ),
+    FILTER ( ALL ( 'Date' ), 'Date'[Date] <= MAX ( 'Date'[Date] ) )
+)
+```
