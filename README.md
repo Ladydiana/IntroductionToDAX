@@ -200,23 +200,23 @@ CALCULATE (
 )
 ```
 
-##Filters and Relationships
+## Filters and Relationships
 -Relationships affect filter context
 
-###RELATED
+### RELATED
 
 ```RELATED ( table[column] )```
 - Opens a new row context on the target table
 - Following relationships
 - Enables Many side to One Side filtering
 
-###RELATEDTABLE
+### RELATEDTABLE
 ```RELATEDTABLE ( table )```
 - Filters the parameter table
 - Returns only rows related with the current one
 - It is the companion of RELATED
 
-##Context Transition
+## Context Transition
 - CALCULATE performs another task:
   - If executed inside a row context 
     1. It takes the row context 
