@@ -231,4 +231,16 @@ CALCULATE (
   - From 1° of January, to 31° of December
   - No holes
   - Otherwise time intelligence will not work
- 
+  
+### CALENDAR 
+- Returns a table with a single column named "Date", containing a contiguous set of dates in the given range, inclusive.
+```
+CALENDAR (
+    DATE ( YEAR ( MIN ( Sales[Order Date] ) ), 1, 1 ),
+    DATE ( YEAR ( MIN ( Sales[Order Date] ) ), 12, 31 )
+)
+```
+
+### CALENDARAUTO 
+- Automatically creates a calendar table based on the database content. Optionally you can specify the last month (useful for fiscal years)
+- CALENDARAUTO uses all the dates in the model, excluding only calculated columns and tables
