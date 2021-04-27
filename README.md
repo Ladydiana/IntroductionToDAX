@@ -223,3 +223,12 @@ CALCULATE (
 	2. Transforms it into an equivalent filter context
     3. Applies it to the data model Before computing its expression
 - Example: ```SUM()``` vs ```CALCULATE(SUM())```
+
+## Time Intelligence
+- Time intelligence needs a date table
+- Date table properties: 
+  - All dates should be present
+  - From 1° of January, to 31° of December
+  - No holes
+  - Otherwise time intelligence will not work
+ 
