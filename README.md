@@ -4,6 +4,17 @@
 Based on SQLBI's Introducing DAX Video Course.
 
 
+# Report Schema
+![alt text](https://github.com/Ladydiana/IntroductionToDAX/blob/master/img/Schema.PNG)
+
+
+# Report 
+![alt text](https://github.com/Ladydiana/IntroductionToDAX/blob/master/img/Sample%20Page.PNG)
+
+
+# Theory
+
+
 ## The DAX Language 
 DAX is a functional language, the execution flows with function calls.
 
